@@ -1,8 +1,7 @@
-/******************************************************************************
-Title: Wio Terminal Intercom Project
-Author: Jonathan Tan
-Feb 2021
-******************************************************************************/
+// Wio Terminal Intercom
+// Author: Jonathan Tan
+// Feb 2021
+// Written for Seeed Wio Terminal
 
 #include <rpcWiFi.h>
 #include <PubSubClient.h>

@@ -46,8 +46,8 @@ DateTime now;
 const char *ssid = "YourWiFiSSID";
 const char *password = "YourPassword";
 
-const char *ID = "WioTerminal1";  // Name of our device, must be unique
-const char *PUBTOPIC = "WioTerminal1/messages";  // Topic to publish/subcribe to
+const char *ID = "WioTerminal1";  // Must be unique
+const char *PUBTOPIC = "WioTerminal1/messages";
 const char *SUBTOPIC = "+/messages";
 
 IPAddress broker("YourBrokerIP"); // IP address of your MQTT broker

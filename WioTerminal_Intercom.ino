@@ -1,11 +1,7 @@
 /******************************************************************************
-MQTT_Switch_Example.ino
-Example for controlling a light using an MQTT switch
-by: Alex Wende, SparkFun Electronics
-
-This sketch connects the ESP32 to a MQTT broker and subcribes to the topic
-room/light. When the button is pressed, the client will toggle between
-publishing "on" and "off".
+Title: Wio Terminal Intercom Project
+Author: Jonathan Tan
+Feb 2021
 ******************************************************************************/
 
 #include <rpcWiFi.h>
@@ -48,14 +44,14 @@ const char *months[] = {
 DateTime now;
 
 // Network Settings
-const char *ssid = "KRHome";
-const char *password = "whoask38KR";
+const char *ssid = "YourWiFiSSID";
+const char *password = "YourPassword";
 
 const char *ID = "WioTerminal1";  // Name of our device, must be unique
 const char *PUBTOPIC = "WioTerminal1/messages";  // Topic to publish/subcribe to
 const char *SUBTOPIC = "+/messages";
 
-IPAddress broker(192,168,1,111); // IP address of your MQTT broker
+IPAddress broker("YourBrokerIP"); // IP address of your MQTT broker
 WiFiClient wclient;
 PubSubClient client(wclient); // Setup MQTT client
 

@@ -124,7 +124,7 @@ void millisDelay(int duration) {
 void displayDateTime() {
   now = rtc.now();
   year = String(now.year(), DEC);
-  month = months[String(now.month(), DEC).toInt()];
+  month = months[String(now.month(), DEC).toInt()-1];
   day = String(now.day(), DEC);
   hour = String(now.hour(), DEC);
   minute = String(now.minute(), DEC);
